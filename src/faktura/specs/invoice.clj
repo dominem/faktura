@@ -49,3 +49,10 @@
              ::seller/seller
              ::buyer/buyer
              ::items/items]))
+
+
+(defn conform-invoice
+  [invoice]
+  (if (s/valid? ::invoice invoice)
+    invoice
+    (s/explain ::invoice invoice)))

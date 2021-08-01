@@ -16,11 +16,11 @@
                             :size     8}})
 
 (defn pdf!
-  [invoice]
+  [invoice out-path]
   (clj-pdf/pdf
     [(pdf-metadata invoice)
      (header invoice)
      (contractors invoice)
      (items invoice)
      (summary invoice)]
-    (str (:filename invoice) ".pdf")))
+    out-path))
