@@ -1,0 +1,29 @@
+{:name                   "Faktura nr FV 7/2021"
+ :issue-date             "2021-07-30"
+ :sale-date              "2021-07-30"
+ :payment-deadline       14
+ :payment-method         "przelew"
+ :seller                 {:name    "Simple App"
+                          :address {:city     "Olsztyn"
+                                    :zip-code "11-111"
+                                    :street   "ul. Nieznana 1"}
+                          :nip     "1234567890"
+                          :bank    {:name   "Twój Bank"
+                                    :number "00 1111 2222 3333 4444 5555 6666"}
+                          ;:logo    "example/logo.png"
+                          }
+ :buyer                  {:name    "Buyer Buyer"
+                          :address {:city     "Gdynia"
+                                    :zip-code "22-222"
+                                    :street   "al. Nieznana 2"}
+                          :nip     "1234567891"}
+ :currency               "PLN"
+ :locale                 "pl"
+ :money-formatter        :pl
+ :money-formatter-to-pay :pl-append-PLN
+ :paid                   0
+ :items                  [{:name      "Prace programistyczne"
+                           :unit      :service
+                           :amount    1
+                           :net-price 22222
+                           :tax       23}]}

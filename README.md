@@ -5,10 +5,12 @@
 ## Usage
 
 ```shell
-lein run invoice.edn invoice.pdf
+lein run example/invoice.edn example/invoice.pdf
 ```
 
-where `invoice.edn` is a path to invoice input data in EDN format, and `invoice.pdf` is an output path where the invoice in PDF format will be saved.
+where [`example/invoice.edn`](example/invoice.edn) is a path to invoice input data in EDN format, and [`example/invoice.pdf`](example/invoice.pdf) is an output path where the invoice, in PDF format, will be saved.
+
+You can check the `example` dir to see how the input and output files look like.
 
 ## License
 
