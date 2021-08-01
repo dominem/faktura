@@ -1,14 +1,18 @@
-# faktura
+# Faktura
 
-A Clojure library designed to ... well, that part is up to you.
+"Faktura" is a program for Polish invoice generation. It has been written for personal usage only (very basic needs).
 
 ## Usage
 
-FIXME
+```shell
+lein run invoice.edn invoice.pdf
+```
+
+where `invoice.edn` is a path to invoice input data in EDN format, and `invoice.pdf` is an output path where the invoice in PDF format will be saved.
 
 ## License
 
-Copyright © 2019 FIXME
+Copyright © 2019 Dominik Magdaleński
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at
